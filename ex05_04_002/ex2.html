@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid 2</title>
+</head>
+<style type="text/css">
+    *{
+        padding: 0;
+        margin: 0;
+    }
+
+    .geral{
+        display: grid;
+        grid-template-columns: repeat(6, 150px);
+        grid-auto-rows: 150px;
+        gap: 30px 30px;
+        margin: 20px;
+    }
+
+    /* https://webdesignerhut.com/3d-buttons-with-css-dropshadow/ 
+    https://stackoverflow.com/questions/27298934/3d-box-shadow-effect */
+    div div{
+        border: 2px solid rgba(201, 27, 27, 0.685);
+        box-shadow: -1px 0px 0px rgb(201, 27, 27),0px 1px 0px rgb(201, 27, 27),
+    -2px 1px 0px rgb(201, 27, 27),-1px 2px 0px rgb(201, 27, 27),
+    -3px 2px 0px rgb(201, 27, 27),-2px 3px 0px rgb(201, 27, 27),
+    -4px 3px 0px rgb(201, 27, 27),-3px 4px 0px rgb(201, 27, 27),
+    -5px 4px 0px rgb(201, 27, 27),-4px 5px 0px rgb(201, 27, 27),
+    -6px 5px 0px rgb(201, 27, 27),-5px 6px 0px rgb(201, 27, 27),
+    -7px 6px 0px rgb(201, 27, 27),-6px 7px 0px rgb(201, 27, 27),
+    -8px 7px 0px rgb(201, 27, 27),-7px 8px 0px rgb(201, 27, 27),
+    -9px 8px 0px rgb(201, 27, 27),-8px 9px 0px rgb(201, 27, 27),
+    -10px 9px 0px rgb(201, 27, 27),-9px 10px 0px rgb(201, 27, 27),
+    -11px 10px 0px rgb(201, 27, 27),-10px 11px 0px rgb(201, 27, 27),
+    -12px 11px 0px rgb(201, 27, 27),-11px 12px 0px rgb(201, 27, 27),
+    -13px 12px 0px rgb(201, 27, 27),-12px 13px 0px rgb(201, 27, 27),
+    -14px 13px 0px rgb(201, 27, 27),-13px 14px 0px rgb(201, 27, 27),
+    -15px 14px 0px rgb(201, 27, 27),-14px 15px 0px rgb(201, 27, 27);
+    }
+
+
+    div div:nth-of-type(5){
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+    div div:nth-of-type(6){
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    div div:nth-of-type(7){
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+
+    div div:nth-of-type(12){
+        grid-column-start: 3;
+        grid-column-end: 5;
+    }
+
+    div div:nth-of-type(13){
+        grid-column-start: 5;
+        grid-column-end: 7;
+    }
+
+</style>
+<body>
+    <div class="geral">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

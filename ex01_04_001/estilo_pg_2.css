@@ -1,0 +1,270 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-attachment: fixed;
+    background-image: url(img/fundo-galaxia9.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 860px;
+    margin: 0 auto;
+    width: 1000px;
+}
+
+#fundo_estrelado{
+    background-color: #8c65359a;;
+}
+#cima_menu{
+    display: flex;
+    height: 150px;
+    width: 1000px;
+}
+
+#cima_menu_1{
+    background-image: url(img/moda_folder_pequeno_1.PNG);
+    background-position: center;
+    background-size: cover;
+    border: 5px solid#8C6535;
+    height: 140px;
+    width: 150px; 
+}
+
+#cima_menu_2{
+    background-image: url(img/moda_folder_grande.PNG);
+    background-repeat: no-repeat;
+    background-size: 750px 150px;
+    border: 5px solid#8C6535;
+    height: 140px;
+    width: 670px;
+}
+
+#cima_menu_3{
+    background-image: url(img/moda_folder_pequeno_2.PNG);
+    background-position: center;
+    background-size: cover;
+    border: 5px solid#8C6535;
+    height: 140px;
+    width: 150px;
+}
+
+header{
+    background-color: #0D0D0D;
+    border-bottom: 5px solid#8C6535;
+    border: 5px solid#8C6535;
+    height: 60px;
+    position:sticky;
+    top: 0;
+    width: 990px;
+    z-index: 1;
+}
+
+ul{
+    display: flex;
+}
+
+li{
+    border-right:1px solid rgb(58, 57, 57);
+    color: #8C6535;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    list-style: none;
+    padding: 0 15px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 4px;
+}
+
+ul li:nth-child(7){
+    border-right:0px;
+}
+
+li:hover{
+    color: #F2D16D;
+}
+#principal{
+    display: flex;
+    height: 860px;
+    width: 1000px;
+}
+
+#div_esquerda{
+    display: flex;
+    flex-direction: column;
+    height: 860px;
+    width: 155px;
+}
+.quadrado_coluna{
+    height: 140px;
+    width: 148px;
+}
+
+.icone{
+    left: 25px;
+    position: relative;
+    top: 15px;
+    width: 100px;
+}
+
+.div_coluna{
+    background-color: #16111F;
+    border: 5px solid  #8C6535;
+    height: 420px;
+    width: 150px;
+}
+
+#div_centro{
+    height: 860px;
+    width: 690px;
+}
+
+
+#div_centro_topo{
+    background-color: #16111F;
+    border: 3px solid #8C6535;
+    height: 150px;
+    margin: 0 auto;
+    width: 675px;
+}
+
+.titulo_astronomia{
+    color: #8C6535;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.paragrafo_astronomia{
+    color: #8C6535;
+    margin: 10px 20px;
+    text-align: justify;
+    text-indent: 20px;
+}
+
+#div_centro_meio{
+    border: 5px solid #8C6535;
+    display: flex;
+    height: 534px;
+    justify-content: center;
+    margin: 0 auto;
+    width: 675px;
+}
+
+h1{
+    font-family: sans-serif;
+    font-size: 40px;
+    position: relative;
+    text-align: center;
+    text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.315);
+    top: 60px;
+}
+
+#div_centro_2{
+    background-color: #16111F;
+    border: 5px solid  #8C6535;
+    display: flex;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    top: 30px;
+    width: 250px;
+}
+
+#div_centro_1{
+    background-color: #16111F;
+    border: 5px solid  #8C6535;
+    height: 260px;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    width: 140px;
+}
+
+#div_centro_4{
+    background-color: #16111F;
+    border: 5px solid  #8C6535;
+    height: 260px;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    width: 140px;
+}
+
+#div_centro_3{
+    background-color: #16111F;
+    border: 5px solid  #8C6535;
+    display: flex;
+    height: 150px;
+    margin: 10px;
+    position: relative;
+    top: 100px;
+    width: 250px;
+}
+
+#div_centro_baixo{
+    background-color: #16111F;
+    border: 5px solid #8C6535;
+    height: 150px;
+    margin: 0 auto;
+    width: 675px;
+}
+
+#div_direita{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 860px;
+    width: 150px;
+}
+
+footer{
+    background-color: #0D0D0D;
+    border: 5px solid#8C6535;
+    bottom: 0;
+    height: 60px;
+    position:sticky;
+    width: 990px;
+}
+
+#p_footer{
+    color: #8C6535;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#embaixo_rodape{
+    background-color: #0D0D0D;
+    border: 5px solid#8C6535;
+    display: flex;
+    height: 455px;
+    justify-content: center;
+    margin-top: 10px;
+    width: 990px;
+}
+
+.divs_embaixo_rodape{
+    color: #8C6535;
+    font-size: 13px;
+    font-weight: bold;
+    height: 120px;
+    margin: 10px;
+    text-align: center;
+    width: 125px;
+}
+
+.img_embaixo_rodape{
+    border-radius: 50px;
+    border: 3px solid#8C6535;
+    width:80px;
+}
+
+a:link, a:visited, a:active
+ {
+    color: #8C6535;
+	text-decoration: none;
+
+}

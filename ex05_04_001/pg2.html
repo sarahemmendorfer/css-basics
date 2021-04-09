@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página 1</title>
+    <style type="text/css">
+    *{
+    padding: 0;
+    margin: 0;
+    }
+    .italiano{
+        display: grid;
+        grid-template-columns: 213px repeat(3, 1fr);
+        border: 3px solid rgb(204, 16, 95);
+        text-align: center;
+        font-weight: bold;
+        margin: 10px;
+        grid-auto-rows: minmax(50px, auto);
+    }
+
+    div div{
+        border: 1px solid blue;
+        border-radius: 5px;
+    }
+
+    div div:nth-of-type(1){
+        background-color: rgba(226, 43, 58, 0.521);
+    }
+
+    div div:nth-of-type(2){
+        background-color: rgba(220, 43, 226, 0.514);
+    }
+
+    div div:nth-of-type(3){
+        background-color: rgba(153, 43, 226, 0.432);
+    }
+
+    div div:nth-of-type(4){
+        background-color: rgba(46, 43, 226, 0.452);
+    }
+
+    div div:nth-of-type(5){
+        background-color: rgba(43, 113, 226, 0.472);
+    }
+
+    div div:nth-of-type(6){
+        background-color: rgba(43, 189, 226, 0.466);
+    }
+
+    div div:nth-of-type(7){
+        background-color: rgba(43, 226, 156, 0.452);
+    }
+
+    div div:nth-of-type(8){
+        background-color: rgba(43, 226, 43, 0.424);
+    }
+
+    </style>
+</head>
+<body>
+    <div class="italiano">
+        <div>UNO</div>
+        <div>DUE</div>
+        <div>TRE</div>
+        <div>QUATTRO</div>
+        <div>CINQUE</div>
+        <div>SEI</div>
+        <div>SETTE</div>
+        <div>OTTO</div>
+    </div>
+</body>
+</html>

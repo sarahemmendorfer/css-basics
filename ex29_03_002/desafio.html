@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #site{
+            /* Definimos a largura da página */
+            width:1000px;
+            /* Definirmos a altura da página*/
+            height:400px;
+            /* Aqui definiremos a posição que a página ocupará na tela, nesse caso estamos definindo que fique centralizado na tela*/
+            /*top : posição de cima */
+            margin-top:0;
+            /* left: posição de esquerda*/
+            margin-left:auto;
+            /* bottom : posição de baixo */
+            margin-bottom:0;
+            /* right : posição de direita */
+            margin-right:auto;
+            /* Aqui definiremos a cor de fundo da página */
+            background-color:#666;
+    }
+
+        #header{
+            /*Novamente definimos a largura da div*/
+            width:1000px;
+            /* altura da div */
+            height:100px;
+            /* Cor de fundo da div */
+            background-color:#772d8b;
+        }
+        #conteudo{
+            /*Novamente definimos a largura da div*/
+            width:1000px;
+            /* altura da div */
+            height:400px;
+            /* Cor de fundo da div */
+            background-color:#00cc99;
+        }
+        #footer{
+            clear: both;
+            /*Novamente definimos a largura da div*/
+            width:1000px;
+            /* altura da div */
+            height:100px;
+            /* Cor de fundo da div */
+            background-color:#772d8b;
+        }
+
+        #conteudo_central{
+            float: left;
+            width: 550px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 375px;
+            padding-top: 25px;
+            background-color:#f45b69;
+        }
+
+        #conteudo_central_topo{
+            width: 497px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: #028090;
+        }
+
+        #conteudo_central_meio{
+            width: 497px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+        }
+
+        #conteudo_central_baixo{
+
+            width: 497px;
+            height: 100px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+        }
+
+        #conteudo_meio_1{
+            float: left;
+            margin-right: 25px;
+            width: 149px;
+            height: 100px;
+            background-color: #028090;
+        }
+
+        #conteudo_meio_2{
+            float: left;
+            margin-right: 25px;
+            width: 149px;
+            height: 100px;
+            background-color: #028090;
+        }
+
+        #conteudo_meio_3{
+            float: left;
+            width: 149px;
+            height: 100px;
+            background-color: #028090;
+        }
+
+        #conteudo_1{
+            width: 236px;
+            margin-right: 25px;
+            height: 100px;
+            float: left;
+            background-color: #028090;
+            
+        }
+
+        #conteudo_2{
+            width: 236px;
+            height: 100px;
+            float: left;
+            background-color: #028090;
+        }
+
+        #conteudo_lateral_esquerda{
+            float: left;
+            width: 225px;
+            height: 400px;
+            background-color: #028090;
+        }
+
+        #conteudo_lateral_direita{
+            float: right;
+            width: 225px;
+            height: 400px;
+            background-color: #028090;
+        }
+
+        #conteudo_lateral_1{
+            width: 180px;
+            height: 170px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:#772d8b;
+            margin-top: 20px;
+        }
+
+        #conteudo_lateral_2{
+            width: 180px;
+            height: 180px;
+            margin-left: auto;
+            margin-right: auto;
+            background-color:#371d3f;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="site">
+        <div id="header"></div>
+        <div id="conteudo">
+            <div id="conteudo_lateral_esquerda"></div>
+            <div id="conteudo_central">
+                <div id="conteudo_central_topo"></div>
+                <div id="conteudo_central_meio">
+                    <div id="conteudo_meio_1"></div>
+                    <div id="conteudo_meio_2"></div>
+                    <div id="conteudo_meio_3"></div>
+                </div>
+                <div id="conteudo_central_baixo">
+                    <div id="conteudo_1"></div>
+                    <div id="conteudo_2"></div>
+                </div>
+            </div>
+            <div id="conteudo_lateral_direita">
+                <div id="conteudo_lateral_1"></div>
+                <div id="conteudo_lateral_2"></div>
+            </div>
+        </div>
+        <div id="footer"></div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Vamos primeiramente aplicar estilos para os links em seu estado inicial.  */
+        .barNav a {
+        font:12px  Arial,Verdana,Helvetica,sans-serif;
+        color: #000;
+        text-decoration: none;
+        background: #FFC50C;
+        text-align: center;
+        padding: 1px 5px;
+        margin-right: 1px;
+        border: 1px solid #000;
+        }
+    
+        /* As regras CSS para o estado mouse sobre os links*/
+
+        .barNav a:hover {
+        color: #666;
+        background: #FCFCFC;
+        border: 1px solid #666;
+        }
+
+        /* O quatro estados dos links
+        Os links podem ter até 4 estados diferentes, refletindo cada um, uma ação diferente do usuário:
+
+        1) o estado "UP" (estado inicial, quando a página é carregada) já está estilizado;
+
+        2) o estado "OVER" é estilizado com a:hover também foi estilizado;
+
+        3) o estado "DOWN" é estilizado com a:active não foi tratado neste tutorial, propositadamente, ficando como exercício para você estudar;
+
+        4) o estado "VISITED" para links já visitados com a:visited, também não tratado neste tutorial, propositadamente, ficando como exercício para você estudar; */
+
+    </style>
+</head>
+<body>
+    <p class="barNav">
+        <a href="caminho/arquivo.html" >Home</a>
+        <a href="caminho/arquivo.html">Quem somos</a>
+        <a href="caminho/arquivo.html">Portfólio</a>
+        <a href="caminho/arquivo.html">Contato</a>
+    </p>
+</body>
+</html>

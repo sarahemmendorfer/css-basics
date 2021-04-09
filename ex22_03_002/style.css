@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.623);
+}
+
+header{
+    background-image: url('fundo.jpg');
+    background-repeat:repeat-x;
+    background-size: 190px 200px;
+    position: absolute;
+    width: 100%;
+    height: 200px;
+}
+
+#titulo{
+    font-size: 90px;
+    text-align: center;
+    margin-top: 30px;
+    color:white;
+    -webkit-text-stroke-width: 3px; /* largura da borda */
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
+    background-color: rgb(0, 0, 0);
+}
+
+/* Configurações do menu dropdown */
+.menu{
+    /* remove as marcas da lista */
+    list-style: none;
+    float: left;
+    font-size: 20px;
+}
+
+/* estilizar os itens do menu */
+.menu li{
+    position:relative;
+    float:left;
+    border-right: 1px solid;
+    background-color: rgb(1, 27, 11);
+}
+
+/* estilizando os links */
+.menu li a{
+    color:rgb(255, 255, 255); 
+    text-decoration:none; 
+    padding:10px 40px; 
+    display:block;
+}
+
+
+.menu li a:hover{
+background: rgba(4, 163, 44, 0.356);
+color:#fff;
+text-shadow:0px 0px 5px #fff;
+}
+
+/*definições do submenu */
+.menu li ul{
+    position:absolute;
+    top:0px;
+    left:170px;
+    background-color:#fff;
+    display:none;
+}
+
+/* exibir o submenu */
+.menu li:hover ul, .menu li.over ul{display:block;}
+
+.menu li ul li{
+    border:1px solid #c0c0c0;
+    display:block;
+    width:200px;
+    }
+
+.noticias_1, .noticias_2, .noticias_3, .noticias_4{
+    width: 40%;
+    height: 50%;
+    text-align: justify;
+    padding: 20px;
+}
+
+.bloco_noticias{
+    margin-top: 250px;
+}
+
+.noticias_1, .noticias_2{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.noticias_3, .noticias_4{
+    display: inline-block;
+    vertical-align: top;
+    
+}
+
+.bloco_1, .bloco_2{
+margin-left:200px;
+margin-bottom: 50px;
+}
+
+h2{
+    font-size: 20px;
+    width: 350px;
+    color: black;
+    padding: 10px 10px 0px 0px;
+    
+}
+
+p{
+    padding: 20px 10px 0px 0px;
+    width: 350px;
+}
+
+.figuras{
+    border: 10px solid black;
+    box-shadow: 10px 10px 10px 5px black;
+    border-radius: 10px;
+    
+}
+
+footer{
+    background-color: black;
+}
+
+.proximo_jogo{
+    color: white;
+    text-align: center;
+    width: 100%;
+
+}

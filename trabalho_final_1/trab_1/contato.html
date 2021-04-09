@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <meta name="author" content="Ana Caroline,
+    Erika Harada"> 
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" type="image/x-icon" href="imagens/favicon.ico">
+</head>
+<body id="tnt">
+    <header id="topo">   
+        
+  
+        <div>
+            <img class="imglogo" src="imagens/tnt-logo.png" alt="">
+        </div>
+
+        <div class="buscar">
+            <form role="search" method="get"  class="search" action="#">
+                <input type="search" class="icon" placeholder="Buscar" >
+                <button class="icon"><img id="imgicon" src="imagens/imgicon.GIF" alt=""></button>
+
+            </form>
+        </div>  
+    </header>
+
+    <div id="content">
+        <aside id="asideleft">
+
+            <h2 id="h2home">Contate-nos!</h2>
+     
+        </aside>
+        
+        <main id="mainindextnt">
+
+            <div class="contato">
+                <div>
+                    <p> Se você tem alguma dúvida, sugestão ou quer mandar um recado, utilize o formulário abaixo
+                        
+                    </p>
+                    <p>
+                        Sua opinião é muito importante para nós.
+                    </p>
+        
+                </div>
+    
+                <form action="#" id="formcontato" >
+                    <ul>
+                        <li>
+                             <span>Nome:</span> <br>
+                            <input type="text" name="iptname" id="iptname" required="" placeholder="Ex. João Silva">
+                        </li>
+                        <li >
+                           <br> <span>Email: </span> <br>
+                            <input type="email"  name="iptemail" id="iptemail" required="" placeholder="Ex. joao@email.com">
+                        </li>
+                    </ul>
+                <ul class="formulario1">
+
+                    <li >
+
+                         <span>Data nascimento:</span> <br>
+                        <input type="date" name="iptNascimento" id="iptNascimento" required="">
+                    </li>
+                    <li>
+                        <span>Sexo:</span> <br>
+                        <div class="content-select">
+                            <select name="sltsexo" id="sltsexo" required="">
+                                <option value="">Selecione</option>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Feminino">Feminino</option>
+                                <option value="Outro">Outro</option>
+                                <option value="PNI">Prefiro não informar</option>
+                            </select>
+                        </div>
+                    </li>
+                    <li>
+                        <br><span>Telefone:</span> <br>
+                        <input type="tel" placeholder="XX-XXXXX-XXXX"   pattern="^\d{2}-\d{5}-\d{4}$" title="XX-XXXXX-XXXX" id="tel" >
+                    </li>
+                    <li>
+                        <br><span>Celular:</span> <br>
+                        <input type="tel" required="" placeholder="XX-XXXXX-XXXX"   pattern="^\d{2}-\d{5}-\d{4}$" title="XX-XXXXX-XXXX" id="tel">
+                    </li>
+                    <li >
+                        <br><span>Cep:</span> <br>
+                        <input type="number" required="" name="cep" id="cep" placeholder="99999999" pattern="^\d{8}$" >
+                    </li>
+                    <li >
+                        <br><span>Endereço:</span><br>
+                        <input type="text" name="iptEndereco" id="iptEndereco" required="">
+                    </li>
+                    <li >
+                        <br><span>Bairro:</span><br>
+                        <input type="text" name="iptBairro" id="iptBairro" required="">
+                    </li>
+                    <li >
+                        <br><span>Cidade:</span><br>
+                        <input type="text" name="iptCidade" id="iptCidade" required="">
+                    </li>
+                    <li>
+                        <br> <span>Estado:</span><br>
+                        <div class="content-select">
+                            <select name="iptestado" id="iptestado" required="">
+                                <option value="">Selecione</option>
+                                <option value="AC">Acre</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="AP">Amapá</option>
+                                <option value="AM">Amazonas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="CE">Ceará</option>
+                                <option value="DF">Distrito Federal</option>
+                                <option value="ES">Espírito Santo</option>
+                                <option value="GO">Goiás</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                                <option value="MG">Minas Gerais</option>
+                                <option value="PA">Pará</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PR">Paraná</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RJ">Rio de Janeiro</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="RS">Rio Grande do Sul</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="SC">Santa Catarina</option>
+                                <option value="SP">São Paulo</option>
+                                <option value="SE">Sergipe</option>
+                                <option value="TO">Tocantins</option>
+                            </select>
+                        </div>
+                    </li>
+    
+                </ul>
+    
+                <ul class="formulario2">
+                                    
+                    <li>
+                        <span>Assunto:</span><br>
+                        <div class="content-select">
+                            <select name="iptassunto" id="iptassunto" required="">
+                                <option value="e">Elogios</option>
+                                <option value="r">Reclamações</option>
+                                <option value="s">Sugestões</option>
+                                <option value="c">Compra de Produtos</option>
+                                <option value="col">Colecionador</option>
+                            </select>
+                        </div>
+                    </li>
+    
+                    <li>
+                        
+                        <br><span>Mensagem:</span><br>
+                        <textarea type="text" name="" id="txtmensagem" placeholder="Deixe aqui sua menssagem"></textarea>
+                   
+                    </li>
+                    <li>
+                        <input type="checkbox" name="iptInfo" id="iptInfo" value="Sim"> <small>Desejo receber informações da TNT Energy Drink.</small> </li> <br>
+                    </li>
+                    <li>
+                        <a class="buttom" href="#" target="_self">Enviar</a>
+
+                    </li>
+                </ul>
+
+                </form>
+
+            </div>
+
+
+
+    
+        </main>
+    
+        <aside class="asideright" >
+            <div>
+                <ul class="menutnt">
+                    <li> <a href="indexTNT.html"> Home</a></li>
+                    <li> <a href="produtos.html"> Produtos</a></li>
+                    <li> <a href="quem-somos.html"> Quem Somos</a></li>
+                    <li> <a href="contato.html"> Contatos</a></li>
+                    <li> <a href="indexLAB.html"> TNT Lab</a></li>
+                    
+                </ul>
+        
+            </div>
+                
+        </aside>
+
+    </div>
+
+
+
+    <footer>
+
+        <div>
+            <img class="footerlogo" src="https://www.tntenergydrink.com.br/wp-content/themes/tntenergydrink/img/tnt-energy-drink.png" alt="">
+        </div>
+
+        <div>
+            <ul class="menufooter" >
+                <li>
+                    <a href="https://www.tntenergydrink.com.br/termos-e-condicoes/">Termos e Condições</a>
+                </li>
+                <li>
+                    <a title="Trabalhe Conosco" target="_blank" rel="noopener noreferrer" href="http://www.grupopetropolis.com.br/gente/trabalhe-conosco/">Trabalhe Conosco</a>
+                </li>
+                <li>
+                    <a target="_blank" rel="noopener noreferrer" href="https://www.grupopetropolis.com.br/privacidade">Privacidade</a>
+                </li>
+            </ul>
+        </div>
+ 
+        
+        <div >
+            <ul>
+                
+                <li>
+                    <a href="https://www.facebook.com/tntenergydrink" title="Facebook" target="_blank">
+                    <img src="https://www.tntenergydrink.com.br/wp-content/themes/tntenergydrink/img/ico-footer-facebook.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/tntenergydrink/" title="Instagram" target="_blank">
+                    <img src="https://www.tntenergydrink.com.br/wp-content/themes/tntenergydrink/img/ico-footer-instagram.png" alt="">
+                    </a>
+                    </li>
+                <li>
+                    <a href="https://twitter.com/energydrinktnt" title="Twitter" target="_blank">
+                    <img src="https://www.tntenergydrink.com.br/wp-content/themes/tntenergydrink/img/ico-footer-twitter.png" alt="">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/user/tntenergetico" title="Youtube" target="_blank">
+                    <img src="https://www.tntenergydrink.com.br/wp-content/themes/tntenergydrink/img/ico-footer-youtube.png" alt="">
+                    </a>
+                </li>
+            </ul>
+            
+
+        </div>
+        <div>
+            <h3> <a  href="#topo"> Volte ao Topo</a></h3>
+        </div>
+
+
+    </footer>
+    
+</body>
+<!-- Erika Harada
+Juliana Rodrigues
+Nurya Dantas
+Sarah Giorgia -->
+</html>

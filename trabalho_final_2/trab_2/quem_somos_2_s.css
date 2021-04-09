@@ -1,0 +1,218 @@
+@font-face {
+    font-family: Kreeptown;
+    src: url(kreeptown-font/Kreeptown-9V9B.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #1F1F1F;;
+    max-width: 1300px;
+}
+
+main{
+    display: grid;
+    gap: 10px 7px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 600px;
+    margin: 40px auto;
+    width: 90%;
+}
+
+main .divisoes_principais:nth-of-type(1){
+    background-image: url(img-s/painel_1.jpg);
+    background-size: 100% 200px;
+ }
+
+ main .divisoes_principais:nth-of-type(2){
+    background-image: url(img-s/painel_2.jpg);
+    background-size: 100% 200px;
+ }
+
+ main .divisoes_principais:nth-of-type(3){
+    background-image: url(img-s/painel_3.jpg);
+    background-size: 100% 200px;
+ }
+
+ main .divisoes_principais:nth-of-type(4){
+    background-image: url(img-s/painel_4.jpg);
+    background-size: 100% 200px;
+ }
+
+main .divisoes_principais:nth-of-type(5){
+   grid-column-start: 1;
+   grid-column-end: 5;  
+   display: flex;
+}
+
+
+
+#fundo_peb_1{
+    background-image: url(img-s/fundo_quemsomos_s1.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+}
+
+#fundo_peb_2{
+    background-image: url(img-s/fundo_quemsomos_s2.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 50%;
+}
+
+#fundo_branco{
+    background: white;
+    box-shadow: 2px 2px 10px black;
+    height: 450px;
+    margin-left: 20%;
+    margin-top: 80px;
+    position: relative;
+    width: 100%;
+}
+
+#fundo_branco p{
+    color: rgba(0, 0, 0, 0.883);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 10px 20px;
+    text-indent: 20px;
+}
+
+#fundo_branco span{
+    font-weight: bold;
+    color: #b6111f;
+    
+}
+
+h1{
+    color: #b6111f;
+    font-family: Kreeptown, sans-serif;
+    font-size: 50px;
+    padding: 50px 0 20px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px #790d169c;
+
+}
+
+/* menu */
+
+@font-face{
+    font-family: grafite;
+    src:url(marsneveneksk/MARSNEVENEKSK-Regular.otf)
+}
+header{
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(to left, white,rgba(255, 0, 0, 0.746), rgba(128, 128, 128, 0.808),rgba(0, 0, 0, 0.904), black);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+}
+
+.topo img{
+    display: flex;
+    padding: 20px;
+    width: 155px;
+    height: 105px;
+}
+.menu{
+    background-color: transparent;
+    font-family: grafite;
+    font-size: 45px;
+    display: inline-block;
+    margin-left: 0.5%;
+    position: relative;
+    display: flex;
+    clear: both;
+    padding: 3% 0;
+}
+.menu li{ 
+    position:relative;
+    float: left; 
+    list-style: none; 
+    
+}
+.menu ul li a{
+    color: white; 
+    text-decoration:none; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 30px;
+    padding-right: 10px;
+}
+.menu li a:hover{
+    color:#ff0000d7;  
+}
+
+/*buscador*/
+
+.iconlab1{
+    font-style:italic;
+    font-size:18px;
+    background-color: white;
+    height: 30px;
+    margin-top: 50px;
+ 
+}
+.iconlab{
+    font-style:italic;
+    font-size:18px;
+    background-color: white;
+    color:black;
+    width: 50px;
+    height: 30px;
+      
+    
+}
+/*fim buscador*/
+
+/*configurações footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to left, white,rgba(255, 0, 0, 0.746), rgba(128, 128, 128, 0.808),rgba(0, 0, 0, 0.904), black);
+    position: relative;
+}
+#logo_rodape{
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+div#logo_rodape a{
+    margin-left: 15px;
+}
+
+div#links_rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+div#links_rodape a:hover{
+    color:#84bcf0;  
+}
+
+#copyright{
+    color: rgb(0, 0, 0);
+    font-family: grafite;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 0.2%;
+}
+
+div.clear { 
+    clear: both; 
+}

@@ -1,0 +1,204 @@
+/* Zerar margem e espaçamento */
+*{
+    /* zerando a margem */
+    margin: 0;
+    /* zerando o espaçamento */
+    padding: 0;
+}
+
+/* definindo a pagina das notícias */
+#pagina_central{
+    /* largura = 90% da tela */
+    width: 90%;
+    /* altura = 100% da janela de exibição */
+    height: 1400px;
+    /* centralizando a página */
+    margin-left:auto;
+    margin-right:auto;
+    /* borda superior */
+    border-top: 3px solid;
+}
+
+/* definindo a primeira coluna */
+#coluna_1{
+    /* flutuar a esquerda */
+    float: left;
+    /* define largura */
+    width: 50%;
+    /* define altura */
+    height: 100%;
+    /* define uma borda */
+    border: 1px solid rgb(179, 175, 175);
+}
+/* definindo a segunda coluna */
+#coluna_2{
+    /* flutuar  a esquerda */
+    float: left;
+    /* define largura */
+    width: 25%;
+    /* define altura */
+    height: 100%;
+}
+/* definindo a terceira coluna */
+#coluna_3{
+    float: left;
+    /* flutuar a esquerda; */
+    width: 24.3%;
+    /* define altura */
+    height: 100%;
+    /* define uma borda */
+    border: 1px solid rgb(179, 175, 175);
+}
+
+/* definindo as imagens maiores */
+.imagens_maiores{
+    /* define largura */
+    width: 80%;
+    /* define altura */
+    height: 80%;
+    /* propriedades de bloco */
+    display: block;
+    /* centralizando */
+    margin-left: auto;
+    margin-right: auto;
+    /* espaçamento interno */
+    padding: 30px;
+    
+}
+
+/* definindo as reportagens maiores */
+#reportagem_gata, #reportagem_george{
+    /* define largura */
+    width: 90%;
+    /* centralizar */
+    margin-left: auto;
+    margin-right: auto;
+    /* texto justificado */
+    text-align: justify;
+    /* espaçamento embaixo */
+    padding-bottom: 20px;
+    /* borda */
+    border-bottom: 1px solid rgb(179, 175, 175);
+}
+
+/* definindo as reportagens menores */
+#reportagem_1, #reportagem_2,  #reportagem_3, #reportagem_4, #reportagem_5, #reportagem_6{
+    /* define largura */
+    width: 90%;
+    /* centralizar */
+    margin-left: auto;
+    margin-right: auto;
+    /* texto justificado */
+    text-align: justify;
+    /* define uma margem superior */
+    margin-top: 10px;
+    /* espaçamento interno */
+    padding: 0 10px 20px 0;
+    /* borda */
+    border-bottom: 1px solid rgb(179, 175, 175);
+}
+
+/* define propriedades das imagens menores */
+.imagens_menores{
+    /* largura */
+    width:60%;
+    /* altura */
+    height: 60%;
+    /* propriedades de bloco */
+    display: block;
+    /* centralizar */
+    margin-left: auto;
+    margin-right: auto;
+    /* espaçamento interno */
+    padding: 20px;
+}
+
+/* Definindo estilo dos links */
+.links_reportagens{
+    /* propriedades de bloco */
+    display: block;
+    /* margem inferior */
+    margin-bottom: 10px;
+    /* tamanho de fonte */
+    font-size: 20px;
+    /* sem sublinhado */
+    text-decoration: none;
+    /* cor de fundo */
+    background-color: rgba(61, 61, 61, 0.103);
+    /* espaçamento */
+    padding: 5px;
+    /* bordas arredondadas */
+    border-radius: 15px;
+    /* cor da letra */
+    color: black;
+    /* estilo da letra */
+    font-family: sans-serif;
+    /* negrito */
+    font-weight: bold;
+    /* justificado */
+    text-align: justify;
+}
+
+/* configurações do título */
+#titulo_pets{
+    /* tamanho da fonte */
+    font-size: 60px;
+    /* largura */
+    width: 88%;
+    /* margem esquerda */
+    margin-left: 5%;
+    /* cor de fundo */
+    background-color: rgba(61, 61, 61, 0.103);
+    /* espaçamento */
+    padding: 10px;
+    
+}
+
+/* estilos dos ícones de animais */
+.icone_animal{
+    /* largura */
+    width:5%;
+    /* posção relativa */
+    position: relative;
+    left: 20%;
+    top: 93px;
+    margin: 0 10px;
+
+}
+
+/* configurações do cabeçalho */
+.header_sarah{
+width: 90%;
+margin-left: 5%;
+margin-right: 5%;
+padding-bottom: 4%;
+background-color: silver;
+font-family: cursive;
+text-align: left;
+margin-bottom: 0px;
+
+}
+
+/* menu (igual tulani) */
+.menu{
+list-style:none;        
+border:1px solid #c0c0c0;        
+float:right;
+clear: both;
+text-align: center;
+}
+
+/* menu (igual tulani) */
+.menu li{
+position:relative;        
+float:left;       
+border-right:1px solid #c0c0c0;       
+}
+
+/* menu (igual tulani) */
+.menu li a{
+color:#333; 
+text-decoration:none; 
+padding:5px 10px; 
+display:block;
+}

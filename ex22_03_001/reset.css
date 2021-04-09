@@ -1,0 +1,55 @@
+html, body, div, span, applet, object, iframe,
+
+ h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+
+ a, abbr, acronym, address, big, cite, code,
+
+ del, dfn, em, font, img, ins, kbd, q, s, samp,
+
+ small, strike, strong, sub, sup, tt, var,
+
+ b, u, i, center,
+
+ dl, dt, dd, ol, ul, li,
+
+ fieldset, form, label, legend,
+
+ table, caption, tbody, tfoot, thead, tr, th, tudo {
+
+          margin: 0; padding: 0; border: 0; outline: 0;
+
+          font-size: 100%; vertical-align: baseline;
+
+          background: transparent;
+
+ }
+
+ body {line-height: 1;}
+
+ ol, ul {list-style: none;}
+
+ blockquote, q {quotes: none;}
+
+ :focus {outline: 0;}
+
+ ins {text-decoration: none;}
+
+ del {text-decoration: line-through;}
+
+ table {
+
+          border-collapse: collapse;
+
+          border-spacing: 0;
+
+ }
+
+/* É importante utilizar sempre o tipo rigoroso de documento (DOCTYPE strict), que cumpre a norma HTML/CSS para facilitar a renderização nos navegadores. Além disso, toda vez que você for utilizar a propriedade float para formatação de colunas, em um documento CSS, deve- se ficar atento a algumas regras básicas:
+
+
+
+1.Se as colunas estão inseridas dentro de algum outro elemento, você terá de usar, obrigatoriamente, neste elemento “externo”, a propriedade display:table e a propriedade height:auto. Caso contrário, no Firefox, seu background pode não aparecer ou tão pouco obedecer à altura das colunas.
+
+
+
+2.Se após as colunas, existir outro elemento com propriedade horizontal, formando uma linha, o elemento obrigatoriamente deve receber a propriedade clear: both, para que este elemento não incorpore a propriedade float inserida nas colunas e, com isso, fique logo abaixo delas. */

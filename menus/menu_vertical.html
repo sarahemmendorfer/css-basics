@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=d, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Retirando os marcadores e o recuo e definindo a cor de fundo.*/
+        ul{ 
+        margin: 0; /* retira o recuo para alguns browsers */
+        padding:0; /* retira o recuo para outros browsers */
+        list-style-type: none; /* retira o marcador de listas*/ 
+        background-color: #fade8b; /* cor do fundo */ 
+        }
+    
+        /*Retirando o sublinhado dos links e separando os elementos <li>.*/
+
+            ul li {
+            border-bottom:1px solid #a4a0f5; 
+            /* coloca uma 
+            borda azul entre links */ 
+            }
+
+            ul li a:link {
+            text-decoration: none; 
+            /* retira o sublinhado dos links */ 
+            font-family: Geneva, Arial, Helvetica, 
+            sans-serif; /* define o tipo de fonte */ 
+            font-size:14px; /* define o tamanho da fonte */ 
+            color:#5e0f50; /* define a cor da fonte */ 
+            }
+
+        /*O efeito rollover. */
+        ul#menu li a:hover {
+        background-color: #FFE4B5; /* cor do fundo */
+        color: #DAA520; /* cor da fonte */
+         display:block; /*Esta regra display: block; é escrita com a finalidade de fazer com que a troca da cor do fundo seja na extensão toda do elemento <li>. */
+         }
+        /* Largura, bordas, espaçamentos e detalhes. */
+        /* Largura: nosso menu estende-se pela tela toda do monitor, vamos limitá-lo a uma largura de 200 px: */
+        ul{
+        width:200px; /* uma largura para o menu */ 
+        border:1px solid #003399; 
+        /* uma borda em volta do menu */ 
+        }
+
+        /* Borda e espaçamento: colocando uma borda colorida e um espaçamento a esquerda:*/
+        ul li a:link, ul li a:visited {
+        border-left:10px solid #EEC591; /* uma barrinha a 
+        esquerda dos links */ 
+        padding-left:5px; /* espaçamento entre a 
+        barrinha e o texto do link */ 
+        }
+
+        /* Tornando toda a área clicável e declarando height para IE */
+
+        ul li a:link, ul li a:visited {
+        display:block;
+        height:1%;
+        }
+
+        /*Rollover: trocando a cor da borda com o mouse sobre o link (no rollover) */
+        ul li a:hover {
+        border-left:10px solid #FFD39B; 
+        /* troca a cor da barrinha */ 
+        }
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#">Home</a></li> 
+        <li><a href="#">Tutoriais CSS</a></li> 
+        <li><a href="#">Normas XHTML do W3C</a></li> 
+        <li><a href="#">Posicionamento CSS</a></li> 
+        <li><a href="#">Contato</a></li> 
+        </ul>
+</body>
+</html>

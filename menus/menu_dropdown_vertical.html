@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Primeiramente removeremos as marcas (bullets) e a indentação próprias das listas não ordenadas e definiremos uma largura para os itens do menu. */
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 150px;
+        }
+
+        /*  A seguir precisamos posicionar os itens da lista. Felizmente os itens são renderizados um embaixo do outro, por padrão, que é justamente o que nós queremos. Contudo vamos definir o posicionamento com o valor relative, porque iremos posicionar os sub-menus de modo absoluto em relação a eles, itens.*/
+
+        ul li {
+        position: relative;
+        }
+
+        /* Próximo passo, são os sub-menus. Queremos cada sub-menu ao lado direito do seu elemento pai (item) quando passarmos o mouse sobre ele, item. */
+
+        li ul {
+        position: absolute;
+        left: 149px;
+        top: 0;
+        display: none;
+        }
+
+        /*Você deve ter notado que eu defini para a propriedade “left” o valor de 149px (1px menor que a largura dos itens do menu), isto faz com que os sub-menus transpassem o menu e em consequência não apareça uma borda dupla.  */
+
+        /* Vamos estilizar nossos links.  */
+
+        ul li a {
+        display: block;
+        text-decoration: none;
+        color: #777;
+        background: #fff;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-bottom: 0;
+        }
+
+        /* É importante definir display como “block,” para garantirmos que cada link ocupará toda a a largura definida para o item da lista. */
+
+        /* Lamentavelmente o IE Win interpreta as quebras de linha entre os itens de lista, como espaços vazios e assim para o IE os itens do menu não se assentam um sobre o outro. Contudo existe uma maneira de corrigir este bug do IE: */
+        /* Fix IE. Hide from IE Mac \*/
+            * html ul li { float: left; }
+            * html ul li a { height: 1%; }
+        /* End */
+
+        /*  Você deve ter notado também que se faz necessário 'fechar' o menu, e isto pode ser feito adicionando-se uma borda no fim da lista. E, as regras CSS para ul são:*/
+
+        ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        width: 150px;
+        border-bottom: 1px solid #ccc;
+        }
+
+        /* Agora o pulo! Precisamos fazer 'aparecer' os sub-menus quando passamos o mouse sobre o item. */
+
+        li:hover ul { display: block; }
+
+    </style>
+</head>
+<body>
+    <ul> 
+    <li><a href="#">Home</a></li> 
+    <li><a href="#">About</a> 
+      <ul> 
+        <li><a href="#">History</a></li> 
+        <li><a href="#">Team</a></li> 
+        <li><a href="#">Offices</a></li> 
+      </ul> 
+    </li> 
+    <li><a href="#">Services</a> 
+      <ul> 
+        <li><a href="#">Web Design</a></li> 
+        <li><a href="#">Internet 
+            Marketing</a></li> 
+        <li><a href="#">Hosting</a></li> 
+        <li><a href="#">Domain Names</a></li> 
+        <li><a href="#">Broadband</a></li> 
+      </ul> 
+    </li>
+
+    <li><a href="#">Contact Us</a> 
+      <ul> 
+        <li><a href="#">United Kingdom</a></li> 
+        <li><a href="#">France</a></li> 
+        <li><a href="#">USA</a></li> 
+        <li><a href="#">Australia</a></li> 
+      </ul> 
+    </li> 
+  </ul>
+</body>
+</html>

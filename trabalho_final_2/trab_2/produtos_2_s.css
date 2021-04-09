@@ -1,0 +1,290 @@
+@font-face {
+    font-family: Kreeptown;
+    src: url(kreeptown-font/Kreeptown-9V9B.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#produtos_body{
+    width: 100%;
+    background-color: #1F1F1F;
+    max-width: 1300px;
+}
+
+#produtos_principal{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 110px;
+    grid-auto-rows: 360px 360px 360px 360px 500px 500px 500px 500px;
+    width: 80%;
+    margin: 50px auto;
+}
+
+#produtos_principal .energeticos_tnt_1, .energeticos_tnt_2{
+    background-color: white;
+    position: relative;
+    box-shadow: 1px 1px 5px rgb(110, 108, 108);
+    display: flex;
+    padding: 5px;
+}
+
+.energeticos_tnt_1{
+    justify-content: flex-end;
+}
+
+.energeticos_tnt_1 .paragrafo_1{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.energeticos_tnt_2 .paragrafo_1{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+
+.energetico_lata_1{
+    width: 55%;
+    height: 340px;
+    position: absolute;
+    top: 9px;
+    right: 60%;
+}
+
+.energetico_lata_2{
+    width: 55%;
+    height: 340px;
+    position: absolute;
+    top: 9px;
+    left: 60%;
+}
+
+
+.paragrafo_1{
+    width: 55%;
+    height: 300px;
+    overflow-y: auto;
+
+}
+
+.nome_energeticos{
+    text-align: center;
+    font-family: Kreeptown, sans-serif;
+    font-size: 35px;
+    color: #b6111f;
+    padding: 10px;
+    text-shadow: 1px 1px 1px #790d169c;
+}
+
+.paragrafo_latas{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.883);
+    font-size: 17px;
+    text-indent: 20px;
+}
+
+.paragrafo_1 span{
+    color: rgba(0, 0, 0, 0.883);
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+/* Isotônicos */
+
+.energeticos_tnt_garrafa{
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(110, 108, 108);
+    display: flex;
+}
+
+.energetico_garrafa{
+    width: 52%;
+    height: 500px;
+}
+
+.isotonicos{
+    width: 50%;
+    height: 500px;
+    justify-content: flex-end;
+}
+
+.titulo_isotonicos{
+    width: 90%;
+    height: 150px;
+    display: block;
+    margin: 5px auto;
+}
+
+.isotonicos span{
+    color: rgba(0, 0, 0, 0.883);
+    font-weight: bold;
+    font-family: 'Fredoka One', cursive;
+    margin-left: 10%;
+    display: block;
+    padding: 5px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+}
+
+.isotonicos p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgba(0, 0, 0, 0.883);
+    font-size: 17px;
+    text-indent: 20px;
+    padding: 4px 10px;
+}
+
+.texto_isotonicos{
+    overflow-y: auto;
+    height: 187px;
+}
+
+.isotonicos h2{
+    height:12%;
+    text-align: center;
+    font-family: Kreeptown, sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+    padding: 30px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.555);
+    
+}
+
+#iso_laranja{
+    background-color: #5B4105;
+}
+
+#iso_limao{
+    background-color: #193100;
+}
+
+#iso_tangerina{
+    background-color: #4E1B00;
+}
+
+#iso_uva{
+    background-color: #520064;
+}
+
+/* menu */
+
+@font-face{
+    font-family: grafite;
+    src:url(marsneveneksk/MARSNEVENEKSK-Regular.otf)
+}
+header{
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(to left, white,rgba(255, 0, 0, 0.746), rgba(128, 128, 128, 0.808),rgba(0, 0, 0, 0.904), black);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+}
+
+.topo img{
+    display: flex;
+    padding: 20px;
+    width: 155px;
+    height: 105px;
+}
+.menu{
+    background-color: transparent;
+    font-family: grafite;
+    font-size: 45px;
+    display: inline-block;
+    margin-left: 0.5%;
+    position: relative;
+    display: flex;
+    clear: both;
+    padding: 3% 0;
+}
+.menu li{ 
+    position:relative;
+    float: left; 
+    list-style: none; 
+    
+}
+.menu ul li a{
+    color: white; 
+    text-decoration:none; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 30px;
+    padding-right: 10px;
+}
+.menu li a:hover{
+    color:#ff0000d7;  
+}
+
+/*buscador*/
+
+.iconlab1{
+    font-style:italic;
+    font-size:18px;
+    background-color: white;
+    height: 30px;
+    margin-top: 50px;
+ 
+}
+.iconlab{
+    font-style:italic;
+    font-size:18px;
+    background-color: white;
+    color:black;
+    width: 50px;
+    height: 30px;
+      
+    
+}
+/*fim buscador*/
+
+/*configurações footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to left, white,rgba(255, 0, 0, 0.746), rgba(128, 128, 128, 0.808),rgba(0, 0, 0, 0.904), black);
+    position: relative;
+}
+#logo_rodape{
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+div#logo_rodape a{
+    margin-left: 15px;
+}
+
+div#links_rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+div#links_rodape a:hover{
+    color:#84bcf0;  
+}
+
+#copyright{
+    color: rgb(0, 0, 0);
+    font-family: grafite;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 0.2%;
+}
+
+div.clear { 
+    clear: both; 
+}

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #762B2F;
+            margin: 0 auto;
+            width: 100%;
+        }
+
+        #fundo_mundi{
+            background-image: url(img/mapa_mundi.jpg);
+            border-bottom: 20px solid white;
+            border-top: 10px solid white;
+            height: 120px;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        ul{
+            color: white;
+            display: flex;
+            font-family: sans-serif;
+            font-weight: bold;
+            justify-content: center;
+            list-style: none;
+        }
+
+        li{
+            padding: 4px 3%;
+        }
+
+        #conteudo_central{
+            background-color: white;
+            display: flex;
+            height: 420px;
+            width: 100%;
+        }
+
+        #lateral_esquerda{
+            background-color: rgba(255, 255, 255, 0.774);
+            border-left: 1px solid rgba(128, 128, 128, 0.644);
+            border-right: 1px solid rgba(128, 128, 128, 0.644);
+            box-shadow: 1px 2px 5px grey;
+            height: 420px;
+            margin-left: 8%;
+            width: 22%;
+        }
+
+        #p_artigos{
+            background-color: rgba(194, 190, 190, 0.555);
+            box-shadow: 2px 5px 5px grey;
+            font-family: sans-serif;
+            font-weight: bold;
+            margin-top: 100px;
+            padding: 5px 0;
+            text-align: center;
+            width: 100%;
+        }
+
+        #meio_direita{
+            height: 420px;
+            width: 62%;
+        }
+
+        
+        #div_principal_1{
+            display: flex;
+            height: 160px;
+            margin: 15px auto;
+            width: 90%;
+        }
+
+        .titulos{
+            bottom: 18px;
+            color: #762B2F;
+            font-family: sans-serif;
+            font-weight: bold;
+            left: 20%;
+            position: relative;
+        }
+
+        #login_senha{
+            padding: 20px 20px ;
+        }
+
+        #div_1{
+            border: 1px solid rgba(128, 128, 128, 0.644);
+            height: 140px;
+            width: 55%;
+            background-color: rgba(194, 190, 190, 0.555);
+            border-radius: 20px;
+            border-top: 20px solid rgba(255, 255, 255, 0.507);
+            box-shadow: 1px 2px 5px grey;
+        }
+
+        #div_2{
+            border: 1px solid rgba(128, 128, 128, 0.644);
+            height: 140px;
+            margin-left: 5%;
+            width: 40%;
+            background-color: rgba(194, 190, 190, 0.555);
+            border-top: 20px solid rgba(255, 255, 255, 0.507);
+            box-shadow: 1px 2px 5px grey;
+            border-radius: 20px;
+        }
+
+        #div_principal_2{
+            background-color: rgba(194, 190, 190, 0.555);
+            border: 1px solid rgba(128, 128, 128, 0.644);
+            height: 185px;
+            margin: 0 auto;
+            width: 90%;
+            border-top: 20px solid rgba(255, 255, 255, 0.507);
+            box-shadow: 1px 2px 5px grey;
+            border-radius: 20px;
+
+        }
+
+        footer{
+            background-color: rgb(194, 190, 190);
+            box-shadow: 1px 2px 5px grey;
+            height: 40px;
+            width: 100%;
+        }
+
+        #p_footer{
+            padding: 10px;
+            text-align: center;
+        }
+
+        #p_tribus{
+            bottom: 38px;
+            float: right;
+            padding: 10px;
+            position: relative;
+        }
+
+    </style>
+</head>
+<body>
+    <div id="fundo_mundi">
+    </div>
+    <header>
+        <ul>
+            <li>Home</li>
+            <li>Artigos</li>
+            <li>Notícias</li>
+            <li>Profissionais</li>
+            <li>Six RH</li>
+            <li>Contatos</li>
+            <li>Web Mail</li>
+        </ul>
+    </header>
+    <main>
+        <div id="conteudo_central">
+            <div id="lateral_esquerda">
+                <p id="p_artigos">Artigos</p>
+            </div>
+            <div id="meio_direita">
+                <div id="div_principal_1">
+                    <div id="div_1">
+                        <span class="titulos">Notícias</span>
+                    </div>
+                    <div id="div_2">
+                        <span class="titulos">Pesquisa</span>
+                        <p id="login_senha">Login <br/><br/> Senha</p>
+                    </div>
+                </div>
+                <div id="div_principal_2">
+                    <span class="titulos">Destaques</span>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p id="p_footer">Paulo Madeira 2007 . Todos os direitos reservados.</p>
+        <span id="p_tribus">by TRIBUS</span>
+    </footer>
+</body>
+</html>

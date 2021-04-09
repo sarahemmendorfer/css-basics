@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>TNT</h1>
+        </div>
+        <div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="quemsomos.html">Quem somos</a></li>
+                <li><a href="contato1.html">Contato</a></li>
+            </ul>
+        </div>
+        <div class="search">
+            <input type="search" name="search" id="search" placeholder="Buscar">
+            <button type="submit" id="button-header">Ok</button>
+        </div>
+    </div>
+
+    <div class="main-contato">
+        <div class="col col1">
+            <div>
+                <h1 id="titulo">Contato</h1>
+            </div>
+            <div class="form">
+                <form>
+                    <div class="campo">
+                        <label for="nome"><strong>Nome</strong></label>
+                        <input type="text" name="nome" id="nome">
+                    </div>
+                    <div class="campo">
+                        <label for="email"><strong>E-mail</strong></label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <fieldset class="grupo">
+                        <div class="linha">
+                            <label for="dt-nascimento"><strong>Data Nascimento</strong></label>
+                            <input type="date" class="input-form">
+                        </div>
+                        <div class="linha">
+                            <label for="sexo"><strong>Sexo</strong></label>
+                            <label><input type="radio" name="sexo" id="sexo" value="feminino">Feminino</label>
+                            <label><input type="radio" name="sexo" id="sexo" value="masculino">Masculino</label>
+                        </div>
+                    </fieldset>
+                    <fieldset class="grupo">
+                        <div class="linha">
+                            <label for="tel"><strong>Telefone</strong></label>
+                            <input type="tel" name="tel" id="tel">
+                        </div>
+                        <div class="linha">
+                            <label for="cel"><strong>Celular</strong></label>
+                            <input type="tel" name="cel" id="cel">
+                        </div>
+                        
+                    </fieldset>
+                    <div class="campo">
+                        <label for="end"><strong>Endereço</strong></label>
+                        <input type="text" name="end" id="end">
+                    </div>
+                    <fieldset class="grupo">
+                        <div class="linha">
+                            <label for="bairro"><strong>Bairro</strong></label>
+                            <input type="text" name="bairro" id="bairro">
+                        </div>
+                        <div class="linha">
+                            <label for="cidade"><strong>Cidade</strong></label>
+                            <input type="text" name="cidade" id="cidade">
+                        </div>
+                    </fieldset>
+                    <fieldset class="grupo">
+                        
+                        <div class="linha">
+                            <label for="estado"><strong>Estado</strong></label>
+                            <select name="estado" id="estado">
+                                <option value="selecione" selected disabled>Selecione</option>
+                                <option value="ac">Acre</option>
+                                <option value="al">Alagoas</option>
+                                <option value="ap">Amapá</option>
+                                <option value="am">Amazonas</option>
+                                <option value="ba">Bahia</option>
+                                <option value="ce">Ceará</option>
+                                <option value="df">Distrito Federal*</option>
+                                <option value="es">Espírito Santo</option>
+                                <option value="go">Goiás</option>
+                                <option value="ma">Maranhão</option>
+                                <option value="mt">Mato Grosso</option>
+                                <option value="ms">Mato Grosso do Sul</option>
+                                <option value="mg">Minas Gerais</option>
+                                <option value="pa">Pará</option>
+                                <option value="pb">Paraíba</option>
+                                <option value="pr">Paraná</option>
+                                <option value="pe">Pernambuco</option>
+                                <option value="pi">Piauí</option>
+                                <option value="rj">Rio de Janeiro</option>
+                                <option value="rn">Rio Grande do Norte</option>
+                                <option value="rs">Rio Grande do Sul</option>
+                                <option value="ro">Rondônia</option>
+                                <option value="rr">Roraima</option>
+                                <option value="sc">Santa Catarina</option>
+                                <option value="sp">São Paulo</option>
+                                <option value="se">Sergipe</option>
+                                <option value="to">Tocantins</option>
+                            </select>
+                        </div>
+                        <div class="linha">
+                            <label for="cep"><strong>CEP</strong></label>
+                            <input type="tel" name="cep" id="cep">
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <label for="assunto"><strong>Assunto</strong></label>
+                        <select name="assunto" id="assunto">
+                            <option value="selecione" selected disabled>Selecione</option>
+                            <option value="elogios">Elogios</option>
+                            <option value="reclamacoes">Reclamações</option>
+                            <option value="sugestoes">Sugestões</option>
+                            <option value="compra">Compra de Produtos</option>
+                            <option value="colecionador">Colecionador</option>
+                        </select>
+                    </div>
+                    <div class="campo">
+                        <label for="mensagem"><strong>Mensagem</strong></label>
+                        <textarea name="mensagem" id="mensagem"></textarea>
+                    </div>
+                    <fieldset>
+                        <div class="linha">
+                        <input type="checkbox" name="informacao" id="informacao">
+                        <label for="informacao">
+                            Desejo receber informações da TNT Energy Drink.
+                        </label>
+                        </div>
+                    </fieldset>
+                    <div class="campo">
+                        <button type="submit" class="botao">Enviar</button>
+                    </div>
+                </form>
+            </div>
+
+
+        </div>
+        <div class="col col2">
+            <p>
+                Se você tem alguma dúvida, sugestão ou quer mandar um recado, utilize o formulário ao lado.
+            </p>
+            <p>
+                Ou se preferir ligue:
+            </p>
+            <p>
+                <strong>0800 727 9998</strong>
+            </p>
+            <p>
+                Horário de atendimento:
+            </p>
+            <p>
+                Segunda à sexta das 8h às 17h (exceto feriados)
+            </p>
+            <p>
+                Sua opinião é muito importante para nós.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="logo">
+            <a href="index.html"><img src="img/tnt-energy-drink.png" alt="Logo TNT" style="width: 100px;"></a>
+        </div>
+        <div>
+            <ul class="menu-footer">
+                <li><a href="#" target="_blank">Termos e
+                        Condições</a></li>
+                <li><a href="https://www.grupopetropolis.com.br/gente/trabalhe-conosco/" target="_blank">Trabalhe
+                        Conosco</a></li>
+                <li><a href="https://www.grupopetropolis.com.br/privacidade/" target="_blank">Privacidade</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <a href="https://www.facebook.com/tntenergydrink" target="_blank"><img class="ico"
+                    src="img/facebook.png" alt=""></a>
+            <a href="https://www.instagram.com/tntenergydrink/" target="_blank"><img class="ico"
+                    src="img/instagram.png" alt=""></a>
+            <a href="https://twitter.com/energydrinktnt" target="_blank"><img class="ico" src="img/twitter.png"
+                    alt=""></a>
+            <a href="https://www.youtube.com/user/tntenergetico/" target="_blank"><img class="ico"
+                    src="img/youtube.png" alt=""></a>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

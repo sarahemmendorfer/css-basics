@@ -1,0 +1,252 @@
+@font-face {
+    font-family: Kreeptown;
+    src: url(kreeptown-font/Kreeptown-9V9B.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+}
+
+body{
+   background-color: rgb(47, 47, 47);
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1300px;
+}
+
+main{
+    background-image: url(img-s/fundo_contato_sarah.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#fundo_formulario{
+    background-color: white;
+    box-shadow: 2px 2px 15px black;
+    height: 660px;
+    margin: 50px auto;
+    width: 50%;
+    padding-top: 1px;
+}
+
+h1{
+    color: #b6111f;
+    font-family: Kreeptown, sans-serif;
+    font-size: 55px;
+    margin: 20px 0 5px 0;
+    text-align: center;
+    text-shadow: 1px 1px 1px #790d169c;
+}
+
+
+/*CSS FORM*/
+form {
+    font-size: 16px;
+    margin: 0 auto;
+    max-width: 500px;
+    padding: 10px 0px 30px 10px;
+}
+
+h2 {
+    color: rgba(0, 0, 0, 0.883);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 25px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.363);
+}    
+
+.input_s{
+    background-color: rgba(128, 128, 128, 0.109);
+    border: 1px solid rgba(0, 0, 0, 0.712);
+    margin: 5px;
+    padding: 5px;
+    width: 92%;
+}
+    
+.input_s:hover{
+    background-color: #b6111f6b;
+    border: 2px solid #b6111f;
+}
+
+button{
+    background-color: #c71423;
+    box-shadow: 1px 1px 10px #3b060a9c;
+    color:white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 30px;
+    font-weight: bold;    
+    padding: 0.2% 2% 0 2%;
+    height: 48px;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.555);
+    width: 100%;
+    cursor: pointer;
+}
+
+.botao{
+    margin-left: 1%;
+    margin-top: 15px;
+    width: 94%;
+    
+}
+
+#icones_contato{
+    display: flex;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0 auto;
+
+}
+
+#icones_contato span{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 13px;
+    font-weight: bold; 
+    padding: 20px 20px 20px 8px;
+    color: rgba(0, 0, 0, 0.883);
+       
+}
+
+#icones_contato p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 10px;
+    font-weight: bold;   
+    padding: 10px 20px;
+    color: rgba(0, 0, 0, 0.883);
+}
+
+.ico_redes{
+    width: 35px;
+    height: 35px;
+    padding: 8px;
+}
+
+#ico_celular{
+    width: 40px;
+    height: 40px;
+    padding: 7px 0;
+}
+
+
+/* menu */
+
+@font-face{
+    font-family: grafite;
+    src:url(marsneveneksk/MARSNEVENEKSK-Regular.otf)
+}
+header{
+    width: 100%;
+    height: 140px;
+    background-image: linear-gradient(to left, white,rgba(255, 0, 0, 0.746), rgba(128, 128, 128, 0.808),rgba(0, 0, 0, 0.904), black);
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+.topo{
+    display: flex;
+    flex-direction: row;
+}
+
+.topo img{
+    display: flex;
+    padding: 20px;
+    width: 155px;
+    height: 105px;
+}
+.menu{
+    background-color: transparent;
+    font-family: grafite;
+    font-size: 45px;
+    display: inline-block;
+    margin-left: 0.5%;
+    position: relative;
+    display: flex;
+    clear: both;
+    padding: 3% 0;
+}
+.menu li{ 
+    position:relative;
+    float: left; 
+    list-style: none; 
+    
+}
+.menu ul li a{
+    color: white; 
+    text-decoration:none; 
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 30px;
+    padding-right: 10px;
+}
+.menu li a:hover{
+    color:#ff0000d7;  
+}
+
+/*buscador*/
+
+.iconlab1{
+    font-style:italic;
+    font-size:18px;
+    background-color: white;
+    height: 30px;
+    margin-top: 40px;
+ 
+}
+.iconlab{
+    font-style:italic;
+    font-size:18px;
+    background-color: white;
+    color:black;
+    width: 50px;
+    height: 30px;
+      
+    
+}
+/*fim buscador*/
+
+/*configurações footer*/
+footer{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(to left, white,rgba(255, 0, 0, 0.746), rgba(128, 128, 128, 0.808),rgba(0, 0, 0, 0.904), black);
+    position: relative;
+}
+#logo_rodape{
+    float: right;
+    text-align: center;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+div#logo_rodape a{
+    margin-left: 15px;
+}
+
+div#links_rodape a{
+    text-decoration: none;
+    color: white;
+}
+
+div#links_rodape a:hover{
+    color:#84bcf0;  
+}
+
+#copyright{
+    color: rgb(0, 0, 0);
+    font-family: grafite;
+    font-size: 34px;
+    text-align: center;
+    margin-top: 0.2%;
+}
+
+div.clear { 
+    clear: both; 
+}
